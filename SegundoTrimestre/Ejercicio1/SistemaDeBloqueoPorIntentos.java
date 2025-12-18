@@ -31,6 +31,7 @@ public class SistemaDeBloqueoPorIntentos {
 		for(String k : intentos.keySet()) {
 			if(intentos.get(k) >= 3) {
 				bloqueados = k;
+				System.out.println(bloqueados); //Aqui ira el print del bloqueados para que funcione bien.
 				}
 			if(intentos.get(k) > maximo) {
 				maximo = intentos.get(k);
